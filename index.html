@@ -1,100 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="responsive.css">
-  <link rel="shortcut icon" href="favicon.ico" >
-  <!--     ┬ ┬┌─┐  ┌─┐┬─┐┌─┐        -->
-  <!--     │││├┤   ├─┤├┬┘├┤         -->
-  <!--     └┴┘└─┘  ┴ ┴┴└─└─┘        -->
-  <!--     ╔═╗╦═╗╔═╗╔═╗╔═╗╔╦╗╔═╗    -->
-  <!--     ╠═╝╠╦╝║ ║║ ╦╠═╣ ║ ║╣     -->
-  <!--     ╩  ╩╚═╚═╝╚═╝╩ ╩ ╩ ╚═╝    -->
-</head>
-<body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-        </div>
-        <span class="fa fa-bars menu-icon"></span>
-        <div class="header-right">
-          <a href="#">Lessons</a>
-          <a href="#">Sign in</a>
-          <a href="#" class="login">Log in</a>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <title>Progate</title>
+  </head>
+  <body>   
+   
+    <div class="header">
+        <div class="header-logo">Progate</div>
+        <div class="header-list">
+          <ul>
+              <li>Mahasiswa Active</li>
+              <li>Fresh Graduatete</li>
+              <li>Jobseeker</li>
+          </ul>
         </div>
       </div>
-    </header>
-    <div class="top-wrapper">
-      <div class="container">
-        <h1>LEARN TO CODE.</h1>
-        <h1>LEARN TO BE CREATIVE.</h1>
-        <p>Progate is a web service where you can learn programming online.</p>
-        <p>We offer you a fully equipped coding environment to get you started.</p>
-        <div class="btn-wrapper">
-          <a href="#" class="btn signup">Sign up with Email</a>
-          <p>or</p>
-          <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Sign up with Facebook</a>
-          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Sign up with Twitter</a>
+  
+      <div class="main">
+        <div class="copy-container">
+          <h1>Anda akan lulus<span>?</span>Atau sudah lulus<span>?</span></h1>
+          <h2>Bingung untuk next stepnya<span>???</span></h2>
         </div>
-      </div>
-    </div>
-    <div class="lesson-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Learn Where to Get Started!</h2>
-        </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-              <p>HTML & CSS</p>
-            </div>
-            <p class="text-contents">Languages used to build and design the appearances of your websites. HTML adds the structure, and CSS styles it.</p>
+        
+        <div class="contents">
+          <h3 class="section-title">Tips untuk Anda</h3>
+          <div class="contents-item">
+            <img src="data:image/png;base64,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"alt="Image" style="width:150px;height:150px;">
+            <p>Cari lowongan sesuai klasifikasi Anda disini</p>
+            <a class="btn lowongan">Mulai mencari</a>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>jQuery</p>
-            </div>
-            <p class="text-contents">A fast, feature-rich and easy-to-use JavaScript library that handles animations and Ajax requests.</p>
+          <div class="contents-item">
+            <img src="https://w7.pngwing.com/pngs/358/81/png-transparent-computer-icons-graduation-ceremony-college-student-financial-aid-graduated-people-logo-graduation-ceremony.png"alt="Image" style="width:150px;height:150px;">
+            <p>Cari Pelatihan untuk menambah Skill dan Kompetensi Anda disini</p>
+            <a class="btn latihan">Mulai Berlatih</a>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>Ruby</p>
-            </div>
-            <p class="text-contents">A dynamic, general-purpose language that is simple and productive. It is commonly used around the world to build web applications.</p>
+          <div class="contents-item">
+            <img src="https://i0.wp.com/www.silocreativo.com/en/wp-content/uploads/2017/02/tips-logo-design.jpg?fit=666%2C370&quality=100&strip=all&ssl=1"alt=Image" style="width:150px;height:150px ;">
+            <p>Rekomendasi Bimbingan dari kami disini</p>
+            <a class="btn bimbingan">Tolong Bimbing Saya</a>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>PHP</p>
-            </div>
-            <p class="text-contents">An open source scripting language that can be embedded into HTML, and well suited for web development.</p>
-          </div>
-          <div class="clear"></div>
+       
+        
+        <div class="contact-form">
+          <h3 class="section-title">Join us</h3>
+          <p>Email (wajib diisi)</p>
+          <input>
+          <p>Tuliskan Motivasi Anda (Wajib diisi)</p>
+          <textarea></textarea>
+          <p>* Bidang wajib diisi</p>
+          <input class="contact-submit" type="submit" value="Kirim">
+          
         </div>
       </div>
-    </div>
-    <div class="message-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Ready to become an awesome programmer?</h2>
-          <h3>Let's learn to code, learn to be creative!</h3>
+      <div class="footer">
+        <div class="footer-logo">Progate</div>
+        <div class="footer-list">
+          <ul>
+            <li>Tentang</li>
+            <li>Karier</li>
+            <li>Hubungi Kami</li>
+          </ul>
         </div>
-        <span class="btn message">Start Learning</span>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-        <p>Learn to code, learn to be creative.</p>
-      </div>
-    </footer>
-  </body>
+     
+</body>
+
+</div>
 </html>
